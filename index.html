@@ -1,9 +1,45 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
 <body>
-  <h1>Deepak Singh Jadon</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <div class="form-wrapper">
+        <div class="form-container">
+            <div class="form-left">
+                <h2>We Value Your Input</h2>
+                <p>Fill out the form below, and we’ll get back to you promptly.</p>
+                <form id="modernContactForm">
+                    <div class="form-group">
+                        <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <div class="mobile-group">
+                            <span class="country-code">+91</span>
+                            <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Write your message here..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="form-right">
+                <img src="C:\Users\JADON'S\Downloads\Viralgrowth360\image.png" alt="Customer Support">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
